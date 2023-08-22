@@ -1,0 +1,548 @@
+@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300&display=swap");
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Be Vietnam Pro", sans-serif
+    
+}
+body{
+    overflow-x: hidden;
+}
+a{
+    text-decoration: none;
+}
+/* navbar starts*/
+.V{
+    display: inline;
+}
+.name{
+    display: inline;
+    margin-left: -5px;
+}
+.name p{
+    font-weight: bolder;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 50px;
+    align-items: center;
+    overflow-x: hidden;
+}
+nav ul{
+    list-style-type: none;
+    display: flex;
+    margin-right: 4rem;
+    padding: 0 4rem;
+    gap: 2rem;
+}
+nav ul li a{
+    width: 100%;
+    font-size: 20px;
+    line-height: 17px;
+    color:#1f1f1f;
+    transition: font-weight 0.3s;
+    display: inline-block;
+}
+ul li a:hover{
+    transform: scale(1.02);
+    font-weight: bold;
+}
+
+/* navbar ends */
+
+
+/* Hero-Image */
+.Hero-Image{
+    width: 50%;
+}
+/* Hero-Image-ends */
+
+
+/* Hero-section-starts*/
+.name{
+    display: flex;
+    align-items: flex-end;
+}
+.name img{
+    width: 70px;
+    margin-right: -10px;
+}
+.name h3{
+    display: inline;
+    margin-left: -6px;
+    font-size: 2.5rem;
+    font-weight: 400;
+}
+#Hero{
+    position: relative;
+    margin: 4rem auto;
+    margin-bottom: 13rem;
+    padding: 0 1rem;
+    display: flex;
+    gap: 5rem;
+    width: 1200px;
+}
+
+/* Hero---image */
+.Hero-Image{
+    width: 345px;
+    height: 390px;
+    position: relative;
+}
+.User-Image{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    padding: 2.5rem;
+    animation: myself 5s linear 0s infinite;
+    animation-direction: alternate;
+}
+@keyframes myself {
+    0%{
+        scale: 1;
+        filter: grayscale(1);
+    } 
+    50%{
+        scale: 0.9;
+        filter: grayscale(0);
+        box-shadow: 3px 3px 10px black;
+    }
+    100%{
+        scale: 1;
+        filter: grayscale(1);
+    }
+}
+.stripons{
+    position: absolute;
+    
+}
+.zigzags{
+    left: -0.8rem;
+    top: 1.5rem;
+    animation: zigs 5s ease-in infinite alternate ;
+}
+@keyframes zigs {
+    50%{
+        left: 1rem;
+        top: 0.7rem;
+    }
+}
+.plus{
+    top: -0.8rem;
+    left: 50%;
+    animation: Splus 5s ease-in infinite ;
+    animation-direction: alternate;
+}
+@keyframes Splus {
+    50% {
+        top: 2%;
+        left: 48%;
+      }
+}
+.cube{
+    left: 82%;
+    top: -1rem;
+    animation: spin 4s ease-in-out infinite alternate;
+}
+@keyframes spin {
+    50%{
+        transform: rotateY(180deg) translateY(1rem);
+    }
+}
+.circle{
+    left: 8%;
+    top: 80%;
+    animation: motion 5s ease-in-out infinite alternate;
+}
+@keyframes motion {
+    50%{
+        left: 0%;
+        top: 92%;
+    }
+}
+.dots{
+    top: 83%;
+    left: 62%;
+    animation: fitting 5s linear infinite alternate;
+}
+@keyframes fitting {
+    50%{
+        top: 79%;
+        left: 57%;
+    }
+}
+/* Heroo---IMage--ends */
+#Intro{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: center;
+}
+.head{
+    font-size: 35px;
+    color: #343d68;
+}
+#desc{
+    width: 70%;
+    font-size: 16px;
+    font-weight: 500;
+    margin-top: 1rem;
+}
+.js{
+    font-size: 45px;
+    color: #343d68;
+}
+.role{
+    color: #4e45d5;
+    font-weight: 800;
+}
+/* Hero-section-end*/
+
+
+/* Hire-Button */
+.btn{
+    position: relative;
+    background-color: orangered;
+    border: none;
+    width: 100px;
+    height: 50px;
+    color: white;
+    font-weight: 400;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    box-shadow: 3px 3px 5px rgba(16, 1, 1, 0.4);
+    z-index: 0;
+}
+.btn::before{
+    content: "";
+    background-color: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    color: #1f1f1f;
+    transform :scaleX(0);
+    transform-origin: left;
+    transition: all 1s;
+    
+    
+    z-index: -1;
+}
+.btn:hover::before{
+    transform: scaleX(1);
+}
+.btn:hover {
+    color: #1f1f1f;
+    cursor: pointer;
+}
+/* Hire-Button-ends */
+/* Heroo--Section--ends */
+/* ----Watermark---- */
+.Watermark{
+    position: absolute;
+    font-size: 6em;
+    bottom: -60%;
+    color: #e7e7e7;
+    font-weight: bold;
+}
+/* -----Proeject--Section------ */
+.ProjectsTitle{
+    background-color: #e7e7e7;
+    text-align: center;
+    font-size: 90px;
+    color: #e84949;
+    padding: 50px 0 30px;
+    line-height: 75px;
+}
+#Projects{
+    background-color:#e7e7e7;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 120px;
+}
+.Project01{
+    background-image: url("Project1.png");
+    right: 5%;
+}
+.Project02{
+    background-image: url("Project2.png");
+    left: 5%;
+}
+.Project03{
+    background-image: url("Project3.png");
+    right: 5%;
+}
+.Project04{
+    background-image: url("Project4.png");
+    left: 5%;
+}
+.ProjectCard{
+    position: relative;
+    width: 80%;
+    height: 550px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-shadow: 0px 0px 40px #1f1f1f;
+    margin: 2rem auto;
+    z-index: 0 ;
+}
+.projectSkill{
+    width: 40px;
+}
+.ProjectContent{
+    position: absolute;
+    top: 25%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    
+    color: #fff;
+    transition: 0.5s;
+    z-index: 2;
+}
+.LeftContent{
+    left: 8%;
+}
+.RightContent{
+    right: 5%;
+}
+.ProjectCard::before{
+    content: "";
+    background: linear-gradient(45deg, #343d68, #343d68be, #343d687c);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: 0.5s;
+}
+.ProjectCard:hover .ProjectContent{
+    transform: scale(1.13);
+}
+.ProjectCard:hover::before{
+    transform: scaleX(1);
+}
+.ProjectCard:hover::after{
+    transform: scaleX(0)
+}
+.ProjectCard::after{
+    content: "";
+    background-color: #1f1f1f9a;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    z-index: 0;
+    transform-origin: left;
+    transition: 0.5s;
+}
+.ProjectNumber{
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 200px;
+    font-weight: 600;
+    color: #fff;
+    display: none;
+    z-index: 2;
+}
+.LeftNumber{
+    top: -8%;
+    left: -4%;
+}
+.RightNumber{
+    top: -8%;
+    left: 87%;
+}
+.ProjectCard:hover .ProjectNumber{
+    display: block;
+}
+.ProjectSkills{
+    display: flex;
+    gap: 1em;
+    max-width: 60%;
+    flex-wrap: wrap;
+}
+
+.ProjectDesc{
+    width: 70%;
+}
+.Title{
+    font-size: 50px;
+    font-weight: bold;
+    line-height: 3rem
+}
+.btnGroup{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+.icon {
+    cursor: pointer;
+    color: white;
+    font-size: 35px;
+    transition: all 0.4s;
+}
+.icon:hover {
+    color: #e84949;
+}
+/* -------Project Section Ends-------- */
+
+/* ------Skills Section Start--------- */
+#Skills{
+    display: relative;
+}
+.SkillContainer{
+    display: flex;
+    padding: 5rem;
+    margin: 10rem auto;
+    gap: 30px;
+}
+.SkillIcons{
+    position: relative;
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.skillsLogo{
+    width: 80px;
+    transition: 0.6s;
+}
+.blobStyle{
+    position: absolute;
+    z-index: -1;
+    left: 20%;
+    top: 19%;
+    animation: blobbing 3.5s linear infinite;
+}
+@keyframes blobbing {
+
+    50%{
+        top: 12%;
+        left: 25%;
+    }
+    
+}
+.text-part h2{
+    color: #e84949;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 50px;
+}
+.text-part p{
+    margin: 15px 0;
+}
+.M{
+    font-size: 90px
+}
+.skillsLogo:hover{
+    transform: scale(1.15);
+    
+}
+/* -------Skill Section Ends------- */
+#Skills{
+    position: relative;
+}
+.skillFadedText{
+    position: absolute;
+    color: #e7e7e7;
+    font-size: 12em;
+    top: 95%;
+    left: 69.8%;
+    overflow-x: hidden;
+}
+/* -------Contacts Section-------- */
+#Contact-Me{
+    background-color: #e7e7e7;
+}
+.ContactContainer{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.ContactContainer h2{
+    font-size: 5em;
+    padding-top: 2rem;
+    color: #e84949
+}
+.ContactContainer h3{
+    font-size: 3em;
+    color: #343d68aa;
+
+}
+.Form{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
+}
+.align{
+    width: 25%;
+    height: 42px;
+    padding: 0 2rem;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 2px 2px 10px #1f1f1f;
+    background: #ffffff97;
+    font-weight: 500;
+}
+.Form textarea{
+    height: auto;
+    padding-top: 1rem;
+}
+.SendMessage{
+    width: 20%;
+    font-size: 1.4rem;
+    margin: 1rem 0;
+    transition: all 0.5s;
+}
+.SendMessage:hover{
+    transform: scale(0.9);
+}
+/* ------Contact Section Over----------- */
+
+/* -----------Footer-------- */
+#footer{
+    position: relative;
+    background-color: #343d68;
+    padding: 5rem;
+}
+.footerContainer{
+    display: flex;
+    gap: 1rem;
+    height: 100%;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.2rem;
+}
+.Options{
+    display: flex;
+    list-style: none;
+    gap: 1.2rem;
+    color: #fff;
+}
+.FooterName{
+    user-select: none;
+    position: absolute;
+    color: #535c87;
+    font-size: 5em;
+    top: 55%;
+    left: 0;
+    display: block;
+    background-color: #343d68;
+}
+.SocialMedia{
+    display: flex;
+    gap: 1rem;
+}
