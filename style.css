@@ -6,6 +6,9 @@
     font-family: "Be Vietnam Pro", sans-serif
     
 }
+html{
+    scroll-behavior: smooth;
+}
 body{
     overflow-x: hidden;
 }
@@ -30,14 +33,14 @@ nav{
     align-items: center;
     overflow-x: hidden;
 }
-nav ul{
+.upar{
     list-style-type: none;
     display: flex;
     margin-right: 4rem;
     padding: 0 4rem;
     gap: 2rem;
 }
-nav ul li a{
+.upar li a{
     width: 100%;
     font-size: 20px;
     line-height: 17px;
@@ -45,7 +48,7 @@ nav ul li a{
     transition: font-weight 0.3s;
     display: inline-block;
 }
-ul li a:hover{
+.upar li a:hover{
     transform: scale(1.02);
     font-weight: bold;
 }
@@ -249,7 +252,7 @@ ul li a:hover{
     font-weight: bold;
 }
 /* -----Proeject--Section------ */
-.ProjectsTitle{
+#ProjectsTitle{
     background-color: #e7e7e7;
     text-align: center;
     font-size: 90px;
@@ -545,4 +548,12 @@ ul li a:hover{
 .SocialMedia{
     display: flex;
     gap: 1rem;
+}
+.Options li a{
+    color: #fff;
+    transition: 0.3s;
+}
+.Options li a:hover{
+    cursor: poin;
+    color: #e84949;
 }
